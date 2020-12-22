@@ -5,7 +5,7 @@ var html5QrcodeScanner = new Html5QrcodeScanner("reader", {
 var lastScan = "";
 function onScanSuccess(qrCodeMessage) {
   // handle on success condition with the decoded message
-  //html5QrcodeScanner.clear();
+  html5QrcodeScanner.clear();
   if (localStorage.getItem(qrCodeMessage) == null) {
     //It does not exits
     lastScan = qrCodeMessage;
@@ -13,6 +13,8 @@ function onScanSuccess(qrCodeMessage) {
     //alert(localStorage.getItem(qrCodeMessage));
     document.getElementById("text").value = localStorage.getItem(qrCodeMessage);
   }
+
+  //document.getElementById("reader").hidden = true;
 
   document.getElementById("setText").hidden = false;
   document.getElementById("text").hidden = false;

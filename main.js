@@ -14,8 +14,8 @@ function onScanSuccess(qrCodeMessage) {
     document.getElementById("text").value = localStorage.getItem(qrCodeMessage);
   }
 
-  document.getElementById("setText").hidden = true;
-  document.getElementById("text").hidden = true;
+  document.getElementById("setText").hidden = false;
+  document.getElementById("text").hidden = false;
   //localStorage.setItem("lastname", "Smith");
 
   // ^ this will stop the scanner (video feed) and clear the scan area.

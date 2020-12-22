@@ -1,0 +1,74 @@
+body {
+  background-color: rgb(41, 41, 41);
+}
+
+#reader {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 300px;
+
+  transform: translate(-50%, 10%);
+  height: 12%;
+}
+
+#text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 50%;
+  height: 10%;
+  transform: translate(-50%, 10%);
+  background-color: rgb(252, 124, 5);
+  color: white;
+}
+
+#setText {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  width: 50%;
+
+  transform: translate(-50%, 0%);
+}
+button {
+  background-color: rgb(252, 124, 5);
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+  -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+button:hover {
+  -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0px 0px #3e3e3e;
+    box-shadow: 0px 0px #3e3e3e;
+  }
+  100% {
+    -webkit-box-shadow: 3px 3px #3e3e3e;
+    box-shadow: 3px 3px #3e3e3e;
+  }
+}
+@keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0px 0px #3e3e3e;
+    box-shadow: 0px 0px #3e3e3e;
+  }
+  100% {
+    -webkit-box-shadow: 3px 3px #3e3e3e;
+    box-shadow: 3px 3px #3e3e3e;
+  }
+}
